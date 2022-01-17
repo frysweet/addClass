@@ -1,0 +1,277 @@
+.collection-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.profile__project-search__nav{
+    /* position: sticky; 
+    top : 62px;
+    left : 0;
+    */
+    display: block;
+   
+    width: 100%;
+
+    padding-top: 2%;
+    
+    background-color: var(--color-bg-primary)!important;
+    /* border-color: #e5e5e5!important;
+    border-bottom: 1px solid #e5e5e5!important; */
+
+    z-index: 100;
+}
+
+
+
+.project-search__nav{
+    position: sticky; 
+    top : 62px;
+    left : 0;
+   
+    display: block;
+   
+    width: 100%;
+
+    padding-top: 2%;
+    
+    background-color: var(--color-bg-primary)!important;
+    /* border-color: #e5e5e5!important;
+    border-bottom: 1px solid #e5e5e5!important; */
+
+    z-index: 100;
+}
+
+
+
+.ps__container {
+    width : 100%;
+
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    
+    overflow-x: hidden;
+}
+
+.ps__blank {
+    display: none;
+}
+
+.ps__menu {
+    position: relative;
+    width: 100%;
+    display: block;
+    flex-shrink: 0!important;
+
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.ps-menu__container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ps-search {
+    position: relative;
+    
+    width: 33%;
+    height: 25px;
+
+    margin-left: 2%;
+    margin-right: 8px;
+
+    background-color: rgb(255, 255, 255);
+    font-size: 11px;
+    transition: all .1s ease-in-out;
+}
+
+
+.collecton-main__container {
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.collection-column {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+
+    margin-top: 21px;
+}
+
+
+
+
+/* =========== grid ============== */
+/* ul 을 grid 로 만들었을때 적용 */
+.collection-item__ul {
+
+    /* ====== grid ====== */
+    display: grid;
+    max-width: 80%;
+    margin : auto;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    column-gap: 3%;
+    margin-bottom: 21px;
+
+    /* ---------------------- */
+
+
+    /* display : flex; */
+    /* flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around; 
+    
+    width : 100% */
+
+    width: 80%;
+
+}
+
+.collection-item__li {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    /* flex */
+    /* 1열에 3개가 들어가지 않는 경우 크기가 달라짐 */
+    /* width: 20%; */
+
+    /* grid */
+    width : 100%;
+
+    /* flex 일때 사용 */
+    /* margin-top: 21px; */
+    
+
+    transform: translate(0%, 0%);
+}
+
+
+
+
+
+
+/* ============ Flex =============== */
+/* ul 을 Flex-box 로 만들었을때 적용 */
+
+
+/* .collection-item__ul {
+
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around; 
+    
+    width : 100%
+
+}
+
+
+.collection-item__li {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    * flex
+    => 1열에 3개가 들어가지 않는 경우 크기가 달라짐
+    width: 20%;
+
+
+
+    * flex 일때 사용
+    margin-top: 21px;
+    
+
+    transform: translate(0%, 0%);
+}
+
+
+.collection__item {
+  
+    => flex 일때 width / height
+    width: 80%;
+    height: 80%;
+    padding : 10%;
+
+    padding : 10%;
+    background-color: rgb(220, 207, 20);
+} */
+
+
+/* ================================================== */
+
+
+
+.collection__btn {
+    position : absolute;
+    top : -3%;
+    right: 3%;
+    
+    width : 20px;
+    height: 20px;
+
+    background-color: crimson;
+}
+
+
+/* 
+collection__item & collection-ratio__box 에 
+position : relative 제거했더니,
+collection__btn 이 collection__item 뒤로 숨는 현상 사라짐 */
+
+.collection__item {
+  
+    /* flex 일때 width / height */
+    /* width: 80%;
+    height: 80%; */
+    /* padding : 10%; */
+
+    /* grid  */
+    width : 100%;
+
+    /* padding : 10%; */
+    background-color: rgb(220, 207, 20);
+}
+
+.collection-ratio__box {
+   
+    height: 0;
+    padding-top: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
